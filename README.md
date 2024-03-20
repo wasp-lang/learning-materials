@@ -12,3 +12,10 @@
 ### Wasp tutorials
 
 You'll find many Wasp tutorials here: https://dev.to/wasp
+
+## Other useful tips
+
+### Setting meta tags for your landing page
+- Having metatags set up is good for SEO and enables you set a cool preview picture when your app is shared in e.g. Slack, Twitter or Discord.
+- If you are looking on way to set the metatags for your landing page, check out how we do it in the Open SaaS repo: https://github.com/wasp-lang/open-saas/blob/main/app/main.wasp#L7
+- Note: this is only for the "main page", support for setting metatags for other pages is planned: https://github.com/wasp-lang/wasp/issues/911#issuecomment-2008111015
