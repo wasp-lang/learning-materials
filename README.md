@@ -71,3 +71,58 @@ Then, run
 fly proxy 5432 -a some-test-db
 ```
 Leave this terminal tab running and open a new terminal tab for future commands.
+
+### Testing Wasp apps on local network
+
+Sometimes when you develop locally, you'll want to check your app on some other device. For example, this is useful for seeing if your app performs well on phones and tablets.
+
+Here's how you can do it with a Wasp app:
+1. Simply run your app with `wasp start`
+2. Look for this part of Wasp's output in the terminal:
+    ```diff
+     [ Client ]   VITE v5.2.6  ready in 229 ms
+     [ Client ]
+     [ Client ]   ➜  Local:   http://localhost:3000/
+    +[ Client ]   ➜  Network: http://192.168.1.39:3000/
+    +[ Client ]   ➜  Network: http://198.19.249.3:3000/
+    +[ Client ]   ➜  Network: http://192.168.215.0:3000/
+     [ Client ]   ➜  press h + enter to show help
+    ```
+3. Try opening the app on your phone using one of the URLs.
+
+    You might get just one **Network** URL, use that one. 
+    If you got multiple network interfaces on your machine, you'll get more URLs, just try them all until you see the client of your app open.
+
+6. **Important:** the app is still not functional. For that we need to adjust some env variables.
+   
+    Edit `.env.server` to contain:
+   ```env
+   WASP_WEB_CLIENT_URL=http://192.168.1.39.nip.io:3000
+   #                   ^ This is the URL with the IP you picked in step 3 above
+   
+   # You'll notice we wrote the URLs like this:
+   #
+   # http://<your-ip>.nip.io:<port>
+   #
+   # 1. nip.io is a simple DNS service that we can use during development (we'll explain below a bit more)
+   # 2. The <port> part is 3000 for the client, and 3001 for the server
+   WASP_SERVER_URL=http://192.168.1.39.nip.io:3001
+   ```
+   And the `.env.client` to contain:
+   ```env
+   REACT_APP_API_URL=http://192.168.1.39.nip.io:3001
+   ```
+
+    <details>
+      <summary>Why we defined those env vars</summary>
+  
+      - We defined `WASP_WEB_CLIENT_URL` to make sure CORS works.
+      - We defined `WASP_SERVER_URL` to make sure OAuth redirects work. You'll need to adjust your redirect URLs for each of the OAuth providers as well.
+      - We defined `REACT_APP_API_URL` so our client where to find our server on the local network, otherwise it won't work.
+    </details>
+     
+7. Try loading your website again on your phone, for the example above, we would now open `http://192.168.1.39.nip.io:3000`
+
+That should be it!
+
+**Why use used nip.io**: for some parts of Wasp (for example Google Auth) simple local IPs aren't allowed. You can skip using `nip.io` if you want, of course, but this is just being extra careful since there is not downside to using `nip.io`. It's free and it just works.
