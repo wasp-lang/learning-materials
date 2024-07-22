@@ -8,6 +8,7 @@
 - [Uploading files with Wasp 0.12+](https://gist.github.com/infomiho/ec379df4e33f3ae3410a251ba3aa81af)
 - [Deploying Wasp with Caprover](https://gist.github.com/infomiho/6505d5970f5c334f704d658e9aa0bf56)
 - [Using namespaces with Websockets in Wasp](https://gist.github.com/infomiho/14cf8b5b6efb07ba4f7a3e1ec76f4381)
+- [Implementing a custom OAuth provider (Spotify)](https://gist.github.com/infomiho/3c63de7d53aba59d6293bcb59501a029)
 
 ### Wasp tutorials
 
