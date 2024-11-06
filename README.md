@@ -11,6 +11,7 @@
 - [Implementing a custom OAuth provider (Spotify)](https://gist.github.com/infomiho/3c63de7d53aba59d6293bcb59501a029)
 - [Multiple domains support for CORS using custom global middleware](https://gist.github.com/infomiho/5ca98e5e2161df4ea78f76fc858d3ca2)
 - [Deploy Wasp to a VPS (reverse proxy + Docker)](https://gist.github.com/infomiho/80f3f50346566e39db56c5e57fefa1fe)
+- [SEO Optimisation Guide for OpenSaaS](https://gist.github.com/NeroxTGC/27a588ad5d78cf09a0b4464321eb5921) by @NeroxTGC
 
 ### Wasp tutorials
 
