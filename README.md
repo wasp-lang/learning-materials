@@ -14,10 +14,10 @@
 - [Swagger UI for Wasp APIs](https://gist.github.com/Genyus/2642f94fe97a3a0f9f12a9d90b6863fb) by @Genyus
 
 **Deployment**
-- [Deploy Wasp to a VPS (reverse proxy + Docker)](https://gist.github.com/infomiho/80f3f50346566e39db56c5e57fefa1fe)
-- [Deploy Wasp with Coolify](https://gist.github.com/infomiho/ad6fade7396498ae32a931ca563a4524)
+- [Deploy Wasp to a VPS (reverse proxy + Docker)](https://wasp.sh/docs/guides/deployment/vps)
+- [Deploy Wasp with Coolify](https://wasp.sh/docs/guides/deployment/coolify)
 - [Deploying Wasp with Caprover (older)](https://gist.github.com/infomiho/6505d5970f5c334f704d658e9aa0bf56)
-- [Deploy Wasp apps to Caprover (newer)](https://gist.github.com/infomiho/a853e2f92aff6d52e9120b8974887464)
+- [Deploy Wasp apps to Caprover (newer)](https://wasp.sh/docs/guides/deployment/caprover)
 
 ### Wasp tutorials
 
