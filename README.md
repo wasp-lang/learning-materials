@@ -9,7 +9,6 @@
 - [Using namespaces with Websockets in Wasp](https://gist.github.com/infomiho/14cf8b5b6efb07ba4f7a3e1ec76f4381)
 - [Implementing a custom OAuth provider (Spotify)](https://gist.github.com/infomiho/3c63de7d53aba59d6293bcb59501a029)
 - [Multiple domains support for CORS using custom global middleware](https://gist.github.com/infomiho/5ca98e5e2161df4ea78f76fc858d3ca2)
-- [SEO Optimisation Guide for OpenSaaS](https://gist.github.com/NeroxTGC/27a588ad5d78cf09a0b4464321eb5921) by @NeroxTGC
 - [Integrating Sentry into Wasp](https://gist.github.com/infomiho/f87bef255b5a9c274c747c24966add15)
 - [Swagger UI for Wasp APIs](https://gist.github.com/Genyus/2642f94fe97a3a0f9f12a9d90b6863fb) by @Genyus
 
@@ -19,16 +18,15 @@
 - [Deploying Wasp with Caprover (older)](https://gist.github.com/infomiho/6505d5970f5c334f704d658e9aa0bf56)
 - [Deploy Wasp apps to Caprover (newer)](https://wasp.sh/docs/guides/deployment/caprover)
 
+**SEO**
+- [SEO Optimisation Guide for OpenSaaS](https://gist.github.com/NeroxTGC/27a588ad5d78cf09a0b4464321eb5921) by @NeroxTGC
+- [Setting meta tags for your Wasp app](https://wasp.sh/docs/guides/optimization/meta-tags)
+
 ### Wasp tutorials
 
 You'll find many Wasp tutorials here: https://dev.to/wasp
 
 ## Other useful tips
-
-### Setting meta tags for your landing page
-- Having metatags set up is good for SEO and enables you set a cool preview picture when your app is shared in e.g. Slack, Twitter or Discord.
-- If you are looking on way to set the metatags for your landing page, check out how we do it in the Open SaaS repo: https://github.com/wasp-lang/open-saas/blob/main/app/main.wasp#L7
-- Note: this is only for the "main page", support for setting metatags for other pages is planned: https://github.com/wasp-lang/wasp/issues/911#issuecomment-2008111015
 
 ### Running `wasp db studio` on production DB
 
