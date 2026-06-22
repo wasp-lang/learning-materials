@@ -1,3 +1,16 @@
+
+### [**Go to the new guides**](https://wasp.sh/docs/guides)
+
+---
+
+> [!WARNING]
+> **DEPRECATED**\
+> The following guides are for very old versions of Wasp, and suffered from lack of maintenance. **All of them** have been migrated to the https://wasp.sh/docs/guides section, where they are all maintained and tested.
+
+
+<details>
+<summary>Show legacy guides</summary>
+
 # learning-materials
 
 ### Useful gists
@@ -134,3 +147,5 @@ Here's how you can do it with a Wasp app:
 That should be it!
 
 **Why use used nip.io**: for some parts of Wasp (for example Google Auth) simple local IPs aren't allowed. You can skip using `nip.io` if you want, of course, but this is just being extra careful since there is not downside to using `nip.io`. It's free and it just works.
+
+</details>
